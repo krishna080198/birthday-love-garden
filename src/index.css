@@ -80,50 +80,50 @@
   }
 
   .dark {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
+    --background: 222 84% 5%;
+    --foreground: 210 40% 98%;
 
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
+    --card: 222 84% 5%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
+    --popover: 222 84% 5%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 340 85% 65%;
-    --primary-foreground: 355 7% 97%;
+    --primary: 340 85% 70%;
+    --primary-foreground: 355 25% 15%;
 
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
+    --secondary: 217 32% 17%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
+    --accent: 217 32% 17%;
+    --accent-foreground: 210 40% 98%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 98%;
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 210 40% 98%;
 
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 340 85% 65%;
+    --border: 217 32% 17%;
+    --input: 217 32% 17%;
+    --ring: 340 85% 70%;
 
-    /* Dark theme custom variables - keep romantic colors but darker */
+    /* Dark theme custom variables - lighter and more attractive */
     --blush-pink: 350 85% 75%;
     --lavender: 280 60% 75%;
-    --soft-red: 0 70% 65%;
-    --cream: 45 100% 85%;
-    --rose-gold: 30 50% 65%;
-    --magical-purple: 270 70% 65%;
+    --soft-red: 0 70% 70%;
+    --cream: 45 100% 90%;
+    --rose-gold: 30 50% 70%;
+    --magical-purple: 270 70% 75%;
 
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --sidebar-background: 222 84% 4%;
+    --sidebar-foreground: 210 40% 98%;
+    --sidebar-primary: 340 85% 70%;
+    --sidebar-primary-foreground: 355 25% 15%;
+    --sidebar-accent: 217 32% 17%;
+    --sidebar-accent-foreground: 210 40% 98%;
+    --sidebar-border: 217 32% 17%;
+    --sidebar-ring: 340 85% 70%;
   }
 }
 
@@ -140,7 +140,7 @@
   }
 
   .dark body {
-    background: linear-gradient(160deg, hsl(240 10% 8%), hsl(240 8% 12%), hsl(280 15% 10%));
+    background: linear-gradient(160deg, hsl(222 84% 8%), hsl(217 32% 12%), hsl(280 50% 10%));
   }
 
   /* Custom Fonts */
@@ -242,7 +242,7 @@
   }
 
   .dark .bg-dreamy {
-    background: linear-gradient(160deg, hsl(240 10% 8%), hsl(240 8% 12%), hsl(280 15% 10%));
+    background: linear-gradient(160deg, hsl(222 84% 8%), hsl(217 32% 12%), hsl(280 50% 10%));
   }
 
   /* Custom Shadows */
