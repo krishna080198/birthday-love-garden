@@ -10,7 +10,7 @@ const initialWishes = [
   },
   {
     id: 2,
-    message: "Wishing you love, laughter, and all the happiness in the world! 💕",
+    message: "Wishing you love, laughter, and all the happiness in the world! 💌",
     author: "Forever Friend",
     color: "bg-lavender"
   },

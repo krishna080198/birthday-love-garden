@@ -242,7 +242,7 @@
 
   /* Magic Cursor Trail */
   .cursor-heart::after {
-    content: '💖';
+    content: '💌';
     position: absolute;
     pointer-events: none;
     animation: sparkle 1s ease-out forwards;

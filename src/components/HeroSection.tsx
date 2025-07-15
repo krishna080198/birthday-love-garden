@@ -65,7 +65,7 @@ export default function HeroSection() {
             Happy Birthday
           </h1>
           <h2 className="text-4xl md:text-5xl font-playfair text-accent mb-8">
-            {friendName} ❤️
+            {friendName} 💌
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground font-poppins mb-12 max-w-2xl mx-auto">
             Today is all about celebrating the wonderful person you are. 

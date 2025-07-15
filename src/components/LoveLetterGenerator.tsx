@@ -6,7 +6,7 @@ const loveMessages = {
   us: "The story of us is written in laughter, painted with memories, and bound together with an unbreakable friendship that I treasure deeply. 💝",
   dream: "Your dreams are as beautiful as you are, and I believe in every single one of them. Keep reaching for the stars! ⭐",
   happy: "Happiness looks good on you, and seeing you happy makes my world brighter. You deserve all the joy life has to offer. 😊",
-  love: "Love surrounds you today and always - from friends, family, and everyone whose life you've touched with your kindness. ❤️",
+  love: "Love surrounds you today and always - from friends, family, and everyone whose life you've touched with your kindness. 💌",
   special: "You're special in ways that words can't capture, with a heart so pure and a spirit so bright that you inspire everyone around you. ✨",
   beautiful: "Beautiful inside and out, you radiate grace, kindness, and joy wherever you go. The world is more beautiful because you're in it. 🌸",
   friend: "Friendship with you is one of life's greatest gifts - filled with trust, laughter, support, and countless precious memories. 🤗",
@@ -27,7 +27,7 @@ export default function LoveLetterGenerator() {
     setTimeout(() => {
       const word = inputWord.toLowerCase().trim();
       const message = loveMessages[word as keyof typeof loveMessages] || 
-        `The word "${inputWord}" makes me think of how wonderful you are! You bring meaning to every word, every moment, and every memory we share. 💖`;
+        `The word "${inputWord}" makes me think of how wonderful you are! You bring meaning to every word, every moment, and every memory we share. 💌`;
       
       setGeneratedMessage(message);
       setIsGenerating(false);

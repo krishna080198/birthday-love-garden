@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import LoadingScreen from '@/components/LoadingScreen';
 import HeroSection from '@/components/HeroSection';
 import DiarySection from '@/components/DiarySection';
-import MemoryGallery from '@/components/MemoryGallery';
 import ConfettiButton from '@/components/ConfettiButton';
 import LoveLetterGenerator from '@/components/LoveLetterGenerator';
 import MagicCandle from '@/components/MagicCandle';
@@ -20,7 +19,6 @@ const Index = () => {
   const sections = [
     'hero',
     'diary', 
-    'gallery',
     'confetti',
     'love-letter',
     'candle',
@@ -74,7 +72,6 @@ const Index = () => {
       {/* Sections */}
       <HeroSection />
       <DiarySection />
-      <MemoryGallery />
       <ConfettiButton />
       <LoveLetterGenerator />
       <MagicCandle />

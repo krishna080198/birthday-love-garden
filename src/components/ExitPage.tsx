@@ -29,7 +29,7 @@ Thank you for being exactly who you are. The world is a better place with you in
 Happy Birthday once again! 🎉
 
 With all my love,
-Your Special Someone ❤️
+Your Special Someone 💌
 
 ---
 Generated with love from your personalized birthday website
@@ -146,7 +146,7 @@ ${new Date().toLocaleDateString()}
           {/* Signature */}
           <div className="mt-16 pt-8 border-t border-primary/20">
             <p className="text-foreground font-poppins">
-              Made with 💖 by someone who cares about you
+              Made with 💌 by someone who cares about you
             </p>
             <p className="text-sm text-muted-foreground font-poppins mt-2">
               {new Date().getFullYear()} • A Birthday Celebration
