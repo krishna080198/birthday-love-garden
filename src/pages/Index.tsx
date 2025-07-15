@@ -1,12 +1,85 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { useState, useEffect } from 'react';
+import LoadingScreen from '@/components/LoadingScreen';
+import HeroSection from '@/components/HeroSection';
+import DiarySection from '@/components/DiarySection';
+import MemoryGallery from '@/components/MemoryGallery';
+import ConfettiButton from '@/components/ConfettiButton';
+import LoveLetterGenerator from '@/components/LoveLetterGenerator';
+import MagicCandle from '@/components/MagicCandle';
+import WishWall from '@/components/WishWall';
+import ExitPage from '@/components/ExitPage';
 
 const Index = () => {
+  const [isLoading, setIsLoading] = useState(true);
+  const [currentSection, setCurrentSection] = useState(0);
+
+  const handleLoadingComplete = () => {
+    setIsLoading(false);
+  };
+
+  const sections = [
+    'hero',
+    'diary', 
+    'gallery',
+    'confetti',
+    'love-letter',
+    'candle',
+    'wishes',
+    'exit'
+  ];
+
+  useEffect(() => {
+    if (!isLoading) {
+      const handleScroll = () => {
+        const scrollPosition = window.scrollY;
+        const windowHeight = window.innerHeight;
+        const sectionIndex = Math.floor(scrollPosition / windowHeight);
+        setCurrentSection(Math.min(sectionIndex, sections.length - 1));
+      };
+
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }
+  }, [isLoading, sections.length]);
+
+  if (isLoading) {
+    return <LoadingScreen onComplete={handleLoadingComplete} />;
+  }
+
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="min-h-screen bg-dreamy">
+      {/* Navigation dots */}
+      <div className="fixed right-6 top-1/2 transform -translate-y-1/2 z-30 hidden lg:block">
+        <div className="space-y-3">
+          {sections.map((section, index) => (
+            <button
+              key={section}
+              onClick={() => {
+                window.scrollTo({
+                  top: index * window.innerHeight,
+                  behavior: 'smooth'
+                });
+              }}
+              className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                currentSection === index 
+                  ? 'bg-primary scale-125' 
+                  : 'bg-primary/30 hover:bg-primary/60'
+              }`}
+              title={section.charAt(0).toUpperCase() + section.slice(1)}
+            />
+          ))}
+        </div>
       </div>
+
+      {/* Sections */}
+      <HeroSection />
+      <DiarySection />
+      <MemoryGallery />
+      <ConfettiButton />
+      <LoveLetterGenerator />
+      <MagicCandle />
+      <WishWall />
+      <ExitPage />
     </div>
   );
 };

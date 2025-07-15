@@ -61,7 +61,18 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				// Birthday theme colors
+				'blush-pink': 'hsl(var(--blush-pink))',
+				'lavender': 'hsl(var(--lavender))',
+				'soft-red': 'hsl(var(--soft-red))',
+				'cream': 'hsl(var(--cream))',
+				'rose-gold': 'hsl(var(--rose-gold))',
+				'magical-purple': 'hsl(var(--magical-purple))'
+			},
+			fontFamily: {
+				'playfair': ['Playfair Display', 'serif'],
+				'poppins': ['Poppins', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
