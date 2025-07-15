@@ -7,16 +7,16 @@ const diaryPages = [
     content: "On this special day, I just want to say how much you mean to me. Your smile lights up every room you enter, and your kindness touches everyone around you. You have this incredible ability to make ordinary moments feel magical."
   },
   {
-    title: "Your Beautiful Spirit", 
-    content: "Thank you for existing and brightening every space you enter. Your laughter is contagious, your dreams are inspiring, and your friendship is a treasure I cherish every single day. You make the world a better place just by being in it."
+    title: "Your Amazing Spirit", 
+    content: "Thank you for being such a wonderful person and brightening every space you enter. Your laughter is contagious, your dreams are inspiring, and your friendship means a lot. You make the world a better place just by being in it."
   },
   {
     title: "Wishes For You",
-    content: "Here's to more memories, more smiles, and more happiness. May this new year bring you adventures that make your heart sing, love that makes you feel cherished, and moments that take your breath away."
+    content: "Here's to more memories, more smiles, and more happiness. May this new year bring you adventures that make you excited, experiences that make you grow, and moments that bring you joy."
   },
   {
     title: "Always Remember",
-    content: "You are stronger than you believe, more talented than you know, and more loved than you could ever imagine. Never forget how special you are and how much joy you bring to everyone lucky enough to know you."
+    content: "You are stronger than you believe, more talented than you know, and appreciated more than you could imagine. Never forget how special you are and how much positivity you bring to everyone lucky enough to know you."
   }
 ];
 
