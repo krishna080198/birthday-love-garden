@@ -22,7 +22,7 @@ export default function HeroSection() {
     return () => clearInterval(interval);
   }, []);
 
-  const friendName = "Beautiful Soul"; // You can customize this
+  const friendName = "Sandesh"; // You can customize this
 
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">

@@ -6,7 +6,7 @@ export default function ExitPage() {
 
   const handleDownload = () => {
     const content = `
-🎂 Happy Birthday Beautiful Soul! 🎂
+🎂 Happy Birthday Sandesh! 🎂
 
 This little surprise was made just for you, because you're one of the most special people in my life. 
 
