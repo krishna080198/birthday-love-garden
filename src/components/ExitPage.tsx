@@ -84,8 +84,8 @@ ${new Date().toLocaleDateString()}
 
           <div className="bg-white/50 backdrop-blur-sm rounded-2xl p-8 md:p-12 shadow-dreamy mb-12">
             <p className="text-lg md:text-xl text-foreground font-poppins leading-relaxed mb-6">
-              This little surprise was made just for you, because you're one of the most 
-              <span className="text-primary font-semibold"> special people </span> 
+              This little surprise was made just for you, because you're 
+              <span className="text-primary font-semibold"> special friend </span> 
               in my life.
             </p>
             

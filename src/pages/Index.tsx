@@ -7,6 +7,7 @@ import LoveLetterGenerator from '@/components/LoveLetterGenerator';
 import MagicCandle from '@/components/MagicCandle';
 import WishWall from '@/components/WishWall';
 import ExitPage from '@/components/ExitPage';
+import ThemeToggle from '@/components/ThemeToggle';
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -46,6 +47,9 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-dreamy">
+      {/* Theme Toggle */}
+      <ThemeToggle />
+      
       {/* Navigation dots */}
       <div className="fixed right-6 top-1/2 transform -translate-y-1/2 z-30 hidden lg:block">
         <div className="space-y-3">

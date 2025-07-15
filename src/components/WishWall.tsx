@@ -5,31 +5,31 @@ const initialWishes = [
   {
     id: 1,
     message: "Hope your birthday is as wonderful as you are! 🌟",
-    author: "Your Bestie",
+    author: "A Friend",
     color: "bg-blush-pink"
   },
   {
     id: 2,
     message: "Wishing you love, laughter, and all the happiness in the world! 💌",
-    author: "Forever Friend",
+    author: "A Friend",
     color: "bg-lavender"
   },
   {
     id: 3,
     message: "May this new year bring you amazing adventures and beautiful memories! 🌈",
-    author: "Your Supporter",
+    author: "A Friend",
     color: "bg-soft-red"
   },
   {
     id: 4,
     message: "You deserve all the joy and magic life has to offer! ✨",
-    author: "Someone Special",
+    author: "A Friend",
     color: "bg-cream"
   },
   {
     id: 5,
     message: "Happy birthday to someone who makes the world brighter! 🌻",
-    author: "Your Admirer",
+    author: "A Friend",
     color: "bg-rose-gold"
   }
 ];

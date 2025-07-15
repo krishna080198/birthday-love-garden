@@ -43,7 +43,7 @@ export default function LoveLetterGenerator() {
     <section className="py-20 px-6 bg-white/20">
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-playfair text-primary mb-8">
-          Love Letter Generator
+          Letter Generator
         </h2>
         <p className="text-lg text-muted-foreground font-poppins mb-12 max-w-2xl mx-auto">
           Type a word that makes you think of happiness, and watch as it transforms 
