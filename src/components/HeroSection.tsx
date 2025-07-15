@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
-import { Heart, Music, VolumeX, Volume2 } from 'lucide-react';
+import { Heart } from 'lucide-react';
 
 export default function HeroSection() {
-  const [isPlaying, setIsPlaying] = useState(false);
   const [fireworks, setFireworks] = useState<Array<{id: number, x: number, y: number}>>([]);
 
   useEffect(() => {
@@ -73,19 +72,6 @@ export default function HeroSection() {
           </p>
         </div>
         
-        {/* Music Control */}
-        <div className="fixed top-6 right-6 z-20">
-          <button
-            onClick={() => setIsPlaying(!isPlaying)}
-            className="bg-white/20 backdrop-blur-sm p-3 rounded-full hover:bg-white/30 transition-all duration-300"
-          >
-            {isPlaying ? (
-              <Volume2 className="w-6 h-6 text-primary" />
-            ) : (
-              <VolumeX className="w-6 h-6 text-primary" />
-            )}
-          </button>
-        </div>
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">

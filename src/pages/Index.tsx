@@ -8,6 +8,7 @@ import MagicCandle from '@/components/MagicCandle';
 import WishWall from '@/components/WishWall';
 import ExitPage from '@/components/ExitPage';
 import ThemeToggle from '@/components/ThemeToggle';
+import MusicPlayer from '@/components/MusicPlayer';
 
 const Index = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -49,6 +50,9 @@ const Index = () => {
     <div className="min-h-screen bg-dreamy">
       {/* Theme Toggle */}
       <ThemeToggle />
+      
+      {/* Music Player */}
+      <MusicPlayer />
       
       {/* Navigation dots */}
       <div className="fixed right-6 top-1/2 transform -translate-y-1/2 z-30 hidden lg:block">
