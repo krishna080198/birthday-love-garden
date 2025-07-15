@@ -30,14 +30,14 @@ export default function ThemeToggle() {
   };
 
   return (
-    <div className="fixed top-6 left-6 z-50 flex items-center gap-3 bg-white/10 backdrop-blur-sm rounded-full p-3 shadow-soft">
-      <Sun className={`w-4 h-4 transition-opacity ${isDarkMode ? 'opacity-50' : 'opacity-100'}`} />
+    <div className="fixed top-6 left-6 z-50 flex items-center gap-3 bg-background/80 backdrop-blur-sm rounded-full p-3 border border-border shadow-soft">
+      <Sun className={`w-4 h-4 transition-all duration-300 ${isDarkMode ? 'opacity-50 text-muted-foreground' : 'opacity-100 text-primary'}`} />
       <Switch 
         checked={isDarkMode}
         onCheckedChange={toggleTheme}
-        className="data-[state=checked]:bg-primary"
+        className="data-[state=checked]:bg-primary data-[state=unchecked]:bg-muted"
       />
-      <Moon className={`w-4 h-4 transition-opacity ${isDarkMode ? 'opacity-100' : 'opacity-50'}`} />
+      <Moon className={`w-4 h-4 transition-all duration-300 ${isDarkMode ? 'opacity-100 text-primary' : 'opacity-50 text-muted-foreground'}`} />
     </div>
   );
 }

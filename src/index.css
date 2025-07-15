@@ -8,33 +8,6 @@
 
 @layer base {
   :root {
-
-
-    /* Rounded Button Styling */
-.theme-toggle {
-  width: 40px;
-  height: 40px;
-  border: none;
-  border-radius: 50%;
-  background-color: #E37383; /* Global color */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: background-color 0.3s, transform 0.2s;
-}
-
-.theme-toggle:hover {
-  background-color: #E37383;
-  transform: scale(1.1);
-}
-
-/* Dark Mode */
-body.dark-mode {
-  background-color: #1a1a1a; /* Dark background */
-  color: #fff; /* White text for contrast */
-}
-body.dark-mode .header p {
-  color: #fff; /* Change text color to white */
-}
     /* Romantic Birthday Color Palette */
     --background: 350 100% 97%;
     --foreground: 340 50% 25%;
@@ -107,50 +80,50 @@ body.dark-mode .header p {
   }
 
   .dark {
-    --background: 0 0% 10.2%;
+    --background: 240 10% 3.9%;
     --foreground: 0 0% 98%;
 
-    --card: 0 0% 10.2%;
+    --card: 240 10% 3.9%;
     --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 10.2%;
+    --popover: 240 10% 3.9%;
     --popover-foreground: 0 0% 98%;
 
     --primary: 340 85% 65%;
-    --primary-foreground: 0 0% 10.2%;
+    --primary-foreground: 355 7% 97%;
 
-    --secondary: 280 60% 25%;
+    --secondary: 240 3.7% 15.9%;
     --secondary-foreground: 0 0% 98%;
 
-    --muted: 0 0% 15%;
-    --muted-foreground: 0 0% 65%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
 
-    --accent: 320 70% 55%;
+    --accent: 240 3.7% 15.9%;
     --accent-foreground: 0 0% 98%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 20%;
-    --input: 0 0% 20%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
     --ring: 340 85% 65%;
 
-    /* Dark theme custom variables */
-    --blush-pink: 350 85% 35%;
-    --lavender: 280 60% 35%;
-    --soft-red: 0 70% 45%;
-    --cream: 45 100% 25%;
-    --rose-gold: 30 50% 45%;
-    --magical-purple: 270 70% 45%;
+    /* Dark theme custom variables - keep romantic colors but darker */
+    --blush-pink: 350 85% 75%;
+    --lavender: 280 60% 75%;
+    --soft-red: 0 70% 65%;
+    --cream: 45 100% 85%;
+    --rose-gold: 30 50% 65%;
+    --magical-purple: 270 70% 65%;
 
-    --sidebar-background: 0 0% 8%;
-    --sidebar-foreground: 0 0% 95%;
-    --sidebar-primary: 340 85% 65%;
-    --sidebar-primary-foreground: 0 0% 10%;
-    --sidebar-accent: 0 0% 15%;
-    --sidebar-accent-foreground: 0 0% 95%;
-    --sidebar-border: 0 0% 15%;
-    --sidebar-ring: 340 85% 65%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
   }
 }
 
@@ -163,6 +136,11 @@ body.dark-mode .header p {
     @apply bg-background text-foreground font-poppins;
     background: var(--gradient-dreamy);
     min-height: 100vh;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .dark body {
+    background: linear-gradient(160deg, hsl(240 10% 8%), hsl(240 8% 12%), hsl(280 15% 10%));
   }
 
   /* Custom Fonts */
@@ -261,6 +239,10 @@ body.dark-mode .header p {
 
   .bg-dreamy {
     background: var(--gradient-dreamy);
+  }
+
+  .dark .bg-dreamy {
+    background: linear-gradient(160deg, hsl(240 10% 8%), hsl(240 8% 12%), hsl(280 15% 10%));
   }
 
   /* Custom Shadows */
