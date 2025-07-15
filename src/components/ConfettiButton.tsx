@@ -1,33 +1,8 @@
-import { useState, useEffect } from 'react';
-import { Sparkles, Timer } from 'lucide-react';
+import { useState } from 'react';
+import { Sparkles } from 'lucide-react';
 
 export default function ConfettiButton() {
   const [confettiPieces, setConfettiPieces] = useState<Array<{id: number, color: string, x: number, y: number}>>([]);
-  const [timeLeft, setTimeLeft] = useState({
-    hours: 0,
-    minutes: 0,
-    seconds: 0
-  });
-
-  useEffect(() => {
-    // Update countdown every second
-    const timer = setInterval(() => {
-      const now = new Date();
-      const tomorrow = new Date(now);
-      tomorrow.setDate(tomorrow.getDate() + 1);
-      tomorrow.setHours(0, 0, 0, 0);
-      
-      const diff = tomorrow.getTime() - now.getTime();
-      
-      setTimeLeft({
-        hours: Math.floor(diff / (1000 * 60 * 60)),
-        minutes: Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60)),
-        seconds: Math.floor((diff % (1000 * 60)) / 1000)
-      });
-    }, 1000);
-
-    return () => clearInterval(timer);
-  }, []);
 
   const triggerConfetti = () => {
     const colors = ['#ff69b4', '#da70d6', '#ff6b6b', '#ffd93d', '#6bcf7f'];
@@ -53,38 +28,9 @@ export default function ConfettiButton() {
   return (
     <section className="py-20 px-6 relative overflow-hidden">
       <div className="max-w-4xl mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-playfair text-primary mb-8">
-          Birthday Countdown
+        <h2 className="text-4xl md:text-5xl font-playfair text-primary mb-12">
+          Magical Surprise
         </h2>
-        
-        {/* Countdown Timer */}
-        <div className="bg-white/50 backdrop-blur-sm rounded-2xl p-8 mb-12 shadow-soft">
-          <div className="flex items-center justify-center space-x-2 mb-6">
-            <Timer className="w-6 h-6 text-primary" />
-            <span className="text-lg font-poppins text-foreground">Time left in your special day</span>
-          </div>
-          
-          <div className="grid grid-cols-3 gap-4 max-w-md mx-auto">
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-playfair text-primary font-bold">
-                {timeLeft.hours.toString().padStart(2, '0')}
-              </div>
-              <div className="text-sm text-muted-foreground font-poppins">Hours</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-playfair text-primary font-bold">
-                {timeLeft.minutes.toString().padStart(2, '0')}
-              </div>
-              <div className="text-sm text-muted-foreground font-poppins">Minutes</div>
-            </div>
-            <div className="text-center">
-              <div className="text-3xl md:text-4xl font-playfair text-primary font-bold">
-                {timeLeft.seconds.toString().padStart(2, '0')}
-              </div>
-              <div className="text-sm text-muted-foreground font-poppins">Seconds</div>
-            </div>
-          </div>
-        </div>
 
         {/* Confetti Button */}
         <div className="space-y-6">
